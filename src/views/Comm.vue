@@ -19,7 +19,7 @@ export default {
         { name: "首页", ico: "icon-home", to: "/" },
         { name: "趋势", ico: "icon-tendency", to: "tendency" },
         { name: "通用登录", ico: "icon-login", to: "login" },
-        { name: "图片预览", ico: "icon-picture", to: "picture " },
+        { name: "图片预览", ico: "icon-picture", to: "picture" },
         { name: "通知图标", ico: "icon-inform", to: "inform" },
         { name: "标签选择器", ico: "icon-label", to: "label" },
         { name: "进度条", ico: "icon-progress", to: "progress" },

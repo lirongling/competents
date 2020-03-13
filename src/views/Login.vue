@@ -9,7 +9,13 @@
     <div class="container">
       <h2>手机验证码</h2>
       <div class="container">
-        <PhoneLogin :ruleForm="ruleForm1" @submit="submit" @errHandle="errHandle" :rules="rules1"></PhoneLogin>
+        <PhoneLogin
+          :ruleForm="ruleForm1"
+          @sendCode="sendCode"
+          @submit="submit"
+          @errHandle="errHandle"
+          :rules="rules1"
+        ></PhoneLogin>
       </div>
     </div>
   </div>
@@ -91,6 +97,11 @@ export default {
     errHandle() {
       this.$Notice.warning({
         title: "验证失败"
+      });
+    },
+    sendCode() {
+      this.$Notice.info({
+        title: "正在发送验证码"
       });
     }
   },

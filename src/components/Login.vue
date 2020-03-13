@@ -5,7 +5,7 @@
       <Inputs type="password" leftIcon="icon-password"></Inputs>-->
       <Form ref="ruleForm" :model="ruleForm" :rules="rules" :label-width="80">
         <FormItem label="用户名" prop="name">
-          <Input v-model="ruleForm.name" placeholder="请输入用户名">
+          <Input clearable v-model="ruleForm.name" placeholder="请输入用户名">
             <Icon type="ios-person-outline" slot="prepend"></Icon>
           </Input>
         </FormItem>

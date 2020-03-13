@@ -3,10 +3,14 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './gloabl/index'
+import './dialog/directives';
 import ViewUI from 'view-design';
 import 'view-design/dist/styles/iview.css';
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 
 Vue.use(ViewUI);
+Vue.use(ElementUI);
 
 Vue.config.productionTip = false
 
