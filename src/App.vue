@@ -1,8 +1,17 @@
 <template>
   <div id="app">
     <router-view />
+    <BackTop></BackTop>
   </div>
 </template>
+<script>
+import BackTop from "./components/BackTop";
+export default {
+  components: {
+    BackTop
+  }
+};
+</script>
 
 <style lang="scss">
 // 去除number类型input的加减

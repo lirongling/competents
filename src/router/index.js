@@ -95,6 +95,54 @@ const routes = [{
             meta: {
                 title: '可拖拽dialog'
             },
+        }, {
+            path: '/inlineTable',
+            name: 'inlineTable',
+            component: () =>
+                import ('../views/InlineTable'),
+            meta: {
+                title: '行内可标记表格'
+            },
+        }, {
+            path: '/editTable',
+            name: 'editTable',
+            component: () =>
+                import ('../views/EditTable'),
+            meta: {
+                title: '单元可标记表格'
+            },
+        }, {
+            path: '/backTop',
+            name: 'backTop',
+            component: () =>
+                import ('../views/BackTop'),
+            meta: {
+                title: '回到顶部'
+            },
+        }, {
+            path: '/403',
+            name: '403',
+            component: () =>
+                import ('../views/403'),
+            meta: {
+                title: '403'
+            },
+        }, {
+            path: '/404',
+            name: '404',
+            component: () =>
+                import ('../views/404'),
+            meta: {
+                title: '403'
+            },
+        }, {
+            path: '/500',
+            name: '500',
+            component: () =>
+                import ('../views/500'),
+            meta: {
+                title: '500'
+            },
         }]
     },
     {

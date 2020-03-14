@@ -15,11 +15,11 @@ export default {
   components: {},
   props: {
     url: {
-      type: Array,
+      type: String,
       default: ""
     },
     srcList: {
-      type: String,
+      type: Array,
       default: () => []
     }
   },

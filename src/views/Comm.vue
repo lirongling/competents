@@ -29,7 +29,7 @@ export default {
         { name: "拖拽dialog", ico: "icon-dialog", to: "dialog" },
         { name: "行内可编辑表格", ico: "icon-inlineTable", to: "inlineTable" },
         { name: "单元可标记表格", ico: "icon-editTable", to: "editTable" },
-        { name: "回到顶部", ico: "icon-top", to: "top" },
+        { name: "回到顶部", ico: "icon-top", to: "backTop" },
         { name: "403", ico: "icon-403", to: "403" },
         { name: "404", ico: "icon-404", to: "404" },
         { name: "500", ico: "icon-500", to: "500" }
@@ -41,7 +41,9 @@ export default {
   props: {},
   beforeMount() {
     let name = this.$route.name;
+
     let b = this.menu.findIndex(item => item.to === name);
+    console.log(b);
     if (b !== -1) {
       this.active = b;
     }

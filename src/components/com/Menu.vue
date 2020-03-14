@@ -45,7 +45,9 @@ export default {
   beforeMount() {
     this.activeIdx = this.active;
   },
-  mounted() {},
+  mounted() {
+    // let a = this.$route.name;
+  },
   watch: {},
   computed: {}
 };
